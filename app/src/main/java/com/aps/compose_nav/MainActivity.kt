@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.aps.compose_nav.navigation.nav_graph.SetupNavGraph
+import com.aps.compose_nav.new_graph.RootNavGraph
 import com.aps.compose_nav.ui.theme.Compose_NavTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,7 +29,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     navController = rememberNavController()
-                    SetupNavGraph(navHostController = navController)
+                    RootNavGraph(navHostController = navController)
+                  //  SetupNavGraph(navHostController = navController)
                 }
             }
         }
